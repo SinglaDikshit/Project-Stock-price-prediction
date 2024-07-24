@@ -94,7 +94,7 @@ elif st.session_state['page'] == 'mum':
             
             predicted_value=predict_stock_value(tummy)
             if predicted_value is not None:
-                st.write(f'The predicted stock value for {tummy} is: {predicted_value:.2f} rs')
+                st.heading(f'The predicted stock value for {tummy} is: {predicted_value:.2f} rs')
             else:
                 st.write(f'No prediction available for {tummy}.')
 
